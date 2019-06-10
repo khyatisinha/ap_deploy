@@ -31,3 +31,4 @@ predicted_classes = resnet50.decode_predictions(predictions,top=4)
 for imagenet_id,name,likelihood in predicted_classes[0]:
     with open('output.txt', 'a+') as f:
         f.write(print(" - {}: {:2f} likelihood".format(name,likelihood)))
+        f.write('\n')
