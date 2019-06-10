@@ -29,4 +29,5 @@ predicted_classes = resnet50.decode_predictions(predictions,top=4)
 
 #gives the top 4 likelihood of the image
 for imagenet_id,name,likelihood in predicted_classes[0]:
-    print(" - {}: {:2f} likelihood".format(name,likelihood))
+    with open('output.txt', 'a+') as f:
+        f.write(print(" - {}: {:2f} likelihood".format(name,likelihood)))
