@@ -1,4 +1,4 @@
-# ap_deployment
+# ap_deploy
 
 Use a pre-trained Keras Resnet model to predict an image.
 
